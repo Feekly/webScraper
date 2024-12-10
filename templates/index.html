@@ -1,0 +1,33 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My data</title>
+</head>
+<body>
+    <h1>
+        Webscraper
+    </h1>
+    <h2>
+        only for wired.com news websites
+    </h2>
+    <p>
+        This is a webscraper web app that utilizes python for the back end and is using the Flask framework for frontend
+        to connect the two dimensions.
+    </p>
+    <!-- we loop through the 'data' variable passed from app.py-->
+     <ul>
+        {% for item in data %}
+            <!--Displaying a list item for each row in the CSV. adjust 'item.itle, 'item.date, ad item.author' to match the
+            column names in your CSV.-->
+            <p><h3>Title: {{ item.title }}</h3></p>
+            <p><h3>Date: {{ item.date }}</h3></p>
+            <p><h3>Author: {{ item.author }}</h3></p>
+            <p><h3>Article: {{ item.p }} </h3></p>
+
+        {% endfor %}
+    </ul>
+</body>
+</html>
