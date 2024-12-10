@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scrape Results</title>
+    <link rel="stylesheet" href="/static/css/results.css">
+</head>
+<body>
+    <h1>Scrape Results</h1>
+    {% if data %}
+    <h2>{{ data.title }}</h2>
+    <p><strong>Date:</strong> {{ data.date }}</p>
+    <p><strong>Author:</strong> {{ data.author }}</p>
+    <p><strong>Content:</strong> {{ data.p }}</p>
+    <p><strong>Additional Info:</strong> {{ data.paywall }}</p>
+    {% else %}
+    <p>No data available.</p>
+    {% endif %}
+    <a href="/">Back</a>
+</body>
+</html>

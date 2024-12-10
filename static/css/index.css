@@ -1,0 +1,16 @@
+h1 {
+    font-size: xxx-large;
+    text-align: center;
+    background: green;
+    border: 5px solid black;
+    margin: 0 auto;
+    padding: 20px;
+    width: 500px;
+    font-family: "Times New Roman";
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: seagreen;
+    text-align: center;
+}
